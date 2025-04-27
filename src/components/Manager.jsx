@@ -20,7 +20,7 @@ const Manager = () => {
         if (form.site.length >= 3 && form.username.length >= 3 && form.password.length >= 3) {
 
             setpasswordArray([...passwordArray, { ...form, id: uuidv4() }])
-            localStorage.setItem("passwords", JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]))
+            localStorage.setItem("passwords", JSON.stringfy([...passwordArray, { ...form, id: uuidv4() }]))
             setform({ site: "", username: "", password: "" })
             toast('Password Saved!', {
                 position: "top-right",
